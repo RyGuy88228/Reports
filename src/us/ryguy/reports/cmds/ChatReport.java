@@ -24,7 +24,7 @@ public class ChatReport implements CommandExecutor {
 
         if (!main.crCancelled()) {
             if(args.length >= 1) {
-                if(sender.hasPermission("reports.report") || sender.hasPermission("reports.op")) {
+                if(sender.hasPermission("reports.chatreport") || sender.hasPermission("reports.op")) {
                     if(Bukkit.getServer().getOnlinePlayers().contains(Bukkit.getServer().getPlayer(args[0]))) {
                         if(main.getMsgs().size() != 0) {
                             FileMaker fm = new FileMaker(main.getDF().getAbsolutePath() + File.separator + "ChatReports", "[" + timestamp + "] " + args[0] + " reported by " + sender.getName() + ".txt");

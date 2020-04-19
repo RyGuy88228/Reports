@@ -36,6 +36,8 @@ public class Reports implements CommandExecutor {
                 sender.sendMessage(ChatColor.DARK_AQUA + "/reports reload" + ChatColor.GRAY + " - Reload's Reports Config!");
                 sender.sendMessage(ChatColor.DARK_AQUA + "/reports getvalue" + ChatColor.GRAY + " - Gets the amount of messages a ChatReport holds!");
                 sender.sendMessage(ChatColor.DARK_AQUA + "/reports setvalue" + ChatColor.GRAY + " - Sets the amount of messages a ChatReport holds!");
+                sender.sendMessage(ChatColor.DARK_AQUA + "/report [user] [reason]" + ChatColor.GRAY + " - Report a user!");
+                sender.sendMessage(ChatColor.DARK_AQUA + "/chatreport [user] [reason]" + ChatColor.GRAY + " - Chatreport a user!");
             }
         }else if(args.length == 2) {
             if(args[0].equalsIgnoreCase("setvalue")) {
@@ -55,12 +57,16 @@ public class Reports implements CommandExecutor {
                 sender.sendMessage(ChatColor.DARK_AQUA + "/reports reload" + ChatColor.GRAY + " - Reload's Reports Config!");
                 sender.sendMessage(ChatColor.DARK_AQUA + "/reports getvalue" + ChatColor.GRAY + " - Gets the amount of messages a ChatReport holds!");
                 sender.sendMessage(ChatColor.DARK_AQUA + "/reports setvalue" + ChatColor.GRAY + " - Sets the amount of messages a ChatReport holds!");
+                sender.sendMessage(ChatColor.DARK_AQUA + "/report [user] [reason]" + ChatColor.GRAY + " - Report a user!");
+                sender.sendMessage(ChatColor.DARK_AQUA + "/chatreport [user] [reason]" + ChatColor.GRAY + " - Chatreport a user!");
             }
         }else {
             sender.sendMessage(ChatColor.GRAY + "" + ChatColor.STRIKETHROUGH + "---" + ChatColor.RESET.toString() + ChatColor.BOLD + "" + ChatColor.GRAY + "[" + ChatColor.DARK_AQUA + " Reports Help " + ChatColor.GRAY + "]" + ChatColor.STRIKETHROUGH + "---");
             sender.sendMessage(ChatColor.DARK_AQUA + "/reports reload" + ChatColor.GRAY + " - Reload's Reports Config!");
             sender.sendMessage(ChatColor.DARK_AQUA + "/reports getvalue" + ChatColor.GRAY + " - Gets the amount of messages a ChatReport holds!");
             sender.sendMessage(ChatColor.DARK_AQUA + "/reports setvalue" + ChatColor.GRAY + " - Sets the amount of messages a ChatReport holds!");
+            sender.sendMessage(ChatColor.DARK_AQUA + "/report [user] [reason]" + ChatColor.GRAY + " - Report a user!");
+            sender.sendMessage(ChatColor.DARK_AQUA + "/chatreport [user] [reason]" + ChatColor.GRAY + " - Chatreport a user!");
         }
         return true;
     }
